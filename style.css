@@ -1,0 +1,260 @@
+/**************************
+        Variables
+**************************/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f5f8;
+  color: #102a42;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+}
+
+/**************************
+    navigation bar  
+**************************/
+nav {
+  background-color: rgba(1, 1, 3, 0.534);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: fixed;
+  width: calc(100% - 150px);
+  left: 150px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  color: #49a6e9;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.nav-toggle :hover {
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+.logo {
+  letter-spacing: 0.3rem;
+  color: #fff;
+  font-size: large;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.social-media-icons {
+  display: none;
+  padding: 10px;
+}
+
+/**************************
+    navigation bar  
+**************************/
+.aside {
+  background-color: #102a42;
+  width: 150px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100%;
+}
+
+.aside-header {
+  padding: 10px;
+}
+
+.aside-logo {
+  letter-spacing: 0.1rem;
+  color: #fff;
+}
+
+.aside-toggle {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.aside-toggle:hover {
+  color: #a5d5f8;
+  transform: rotate(90deg);
+}
+
+.sidebar-items i {
+  color: #49a6e9;
+  padding-right: 10px;
+}
+
+.list-item {
+  padding: 10px;
+}
+
+.list-item:hover {
+  background-color: rgba(0, 0, 0, 0.883);
+  font-size: 1rem;
+  padding-left: 1rem;
+  transition: all 0.4s linear;
+}
+
+.itm-link {
+  color: #fff;
+  padding: 4px;
+}
+
+.main {
+  width: calc(100% - 150px);
+  background-color: red;
+  margin-left: 150px;
+  margin-top: 63px;
+  padding: 20px;
+}
+
+.toggle-main {
+  width: calc(100% - 50px);
+  margin-left: 50px;
+}
+
+.toggle-navbar {
+  width: calc(100% - 50px);
+  left: 50px;
+  transition: all 0.4s linear;
+}
+
+.hide-sidebar {
+  width: 50px;
+}
+.hide-sidebar .itm-link {
+  display: none;
+}
+.hide-sidebar .aside-logo {
+  display: none;
+}
+
+.show-nav-links {
+  display: flex;
+}
+.show-nav-links .social-item a {
+  padding: 10px;
+}
+
+/**************************
+    Main content container
+***************************/
+@media screen and (min-width: 800px) {
+  nav {
+    width: calc(100% - 250px);
+    left: 250px;
+  }
+
+  .nav-center {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+
+  .logo {
+    letter-spacing: 1rem;
+  }
+
+  .social-media-icons {
+    display: flex;
+  }
+
+  .social-media-icons a {
+    color: #49a6e9;
+    margin: 0 0.7rem;
+    transition: all 0.4s linear;
+  }
+
+  .social-media-icons a:hover {
+    color: #9eb2c7;
+  }
+
+  /*********************
+  sidebar
+  **********************/
+  .aside {
+    left: 0;
+    width: 250px;
+    display: grid;
+  }
+
+  .aside-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+  }
+
+  .aside-logo {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+    letter-spacing: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .hide-sidebar {
+    width: 70px;
+  }
+
+  .main {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    margin-top: 75px;
+    padding: 20px;
+    background-color: yellowgreen;
+  }
+
+  .toggle-main {
+    padding: 20px;
+    width: calc(100% - 70px);
+    margin-left: 70px;
+    transition: all 0.4s linear;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
